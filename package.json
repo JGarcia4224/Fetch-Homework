@@ -1,0 +1,27 @@
+{
+  "name": "Fetch-Homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JGarcia4224/Fetch-Homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JGarcia4224/Fetch-Homework/issues"
+  },
+  "homepage": "https://github.com/JGarcia4224/Fetch-Homework#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "9.5.0"
+}
+}
