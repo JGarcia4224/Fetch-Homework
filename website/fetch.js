@@ -1,7 +1,25 @@
 
 
+let req = new XMLHttpRequest();
+req.addEventListener("load", reqListener)
+req.open("GET", "https://jsonplaceholder.typicode.com/users")
+req.responseType = "json";
+req.send();
+
+function reqListener(){
+    let response = req.response;
+    getEmail(response)
+}
 
 
+function getEmail(text){
+    let email=[];
+    for(var i = 0; i<10; i++){
+        email.push("<br>" + text[i].email)
+    }
+    email.sort();
+    document.getElementById("userEmails").innerHTML = email;
+}
 
 
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -11,7 +29,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 let myArray= [];
 				
 				data.forEach(function(user){
-                    myArray.push(user.username)
+                    myArray.push( user.username)
 
 					/*output += `
                     <ul>
